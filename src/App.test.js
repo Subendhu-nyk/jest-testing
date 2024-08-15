@@ -4,7 +4,7 @@ import App from './App';
 test('renders learn react link', () => {
   render(<App />);
   // const linkElement = screen.getByText(/learn react/i);
-  // getByText- it will search for test learn reactin App.js if found test passes otherwise failed
+  // getByText- it will search for test learn react in App.js if found test passes otherwise failed
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
