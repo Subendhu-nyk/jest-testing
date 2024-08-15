@@ -62,8 +62,7 @@ describe('Test the button', () => {
         //Assert
         const outputElement=screen.queryByText("Text Is Not Visible",{exact:false})
         expect(outputElement).toBeNull()
-    })
-    
+    })   
 
      })
 

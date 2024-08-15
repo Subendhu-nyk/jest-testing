@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Output from './Output'
 
 const Test2 = () => {
     const [changedText,setChangedText]=useState(false)
@@ -8,8 +9,8 @@ const Test2 = () => {
     }
   return (
     <>
-    {!changedText && <div>Text Is Not Visible</div>}
-    {changedText && <div>Changed!</div>}
+    {!changedText && <Output>Text Is Not Visible</Output>}
+    {changedText && <Output>Changed!</Output>}
     <button onClick={changedTextHandler}>Changed Text!</button>
     </>   
 
